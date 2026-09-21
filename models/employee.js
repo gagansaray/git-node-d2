@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 mongoose.connect(
-  'mongodb://localhost:27017/employees'
+  'mongodb://localhost:27017/employeeDB'
 ).then(() => {
   console.log('MongoDB connected successfully');
 }).catch((err) => {
@@ -11,7 +11,7 @@ const empSchema = new mongoose.Schema({
   empPass: String,
   created: {type: Date, default: Date.now }
 },{
-    collection:'ftEmployees'
+    collection:'ft_employees'
 });
 //
 module.exports = mongoose.model('Employees', empSchema);
