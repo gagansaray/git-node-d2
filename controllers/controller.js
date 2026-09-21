@@ -5,6 +5,9 @@ exports.getdefault = function(req, res){
 exports.aboutus = function(req, res){
   res.send('You are on the about us route.');
 };
+exports.getemployees = function(req, res){
+  employee.find().then(emps => res.send(emps)).catch(err => res.send({"message": err.message}));
+};
 //
 exports.addemployee=function(req, res){
   let empName = req.body.empName;
