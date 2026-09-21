@@ -13,7 +13,7 @@ npm install
 node index.js
 ```
 ## Requirements
-- Node.js (v14 or higher recommended)
-- npm (Node Package Manager)
+- Node.js (v20 or higher recommended)
+- npm (Node Package Manager v11 or higher)
 ## License
 MIT
